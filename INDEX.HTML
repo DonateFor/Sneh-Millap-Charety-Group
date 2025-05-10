@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Meal Donation</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #004aad;
+    }
+    .qr-code-box {
+      background: #fff;
+      border: 2px dashed #004aad;
+      padding: 1rem;
+      text-align: center;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+    .qr-code-box img {
+      width: 250px;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+    .button {
+      background-color: #004aad;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    .button:hover {
+      background-color: #00337a;
+    }
+    form {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 1rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="file"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    th {
+      background-color: #004aad;
+      color: white;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      .qr-code-box img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sneh Millap Charity Group</h1>
+  </header>
+
+  
+  <section id="meals">
+    <h2>3. Meal Plan & Cost Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Meal Type</th>
+          <th>Description</th>
+          <th>Price (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🍳 Breakfast</td>
+          <td>1 Team for Breakfast</td>
+          <td>₹49</td>
+        </tr>
+        <tr>
+          <td>🍱 Bopper Meal</td>
+          <td>1 Team Meal</td>
+          <td>₹99</td>
+        </tr>
+        <tr>
+          <td>🌙 Dinner</td>
+          <td>1 Team Dinner</td>
+          <td>₹99</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="qr">
+    <h2>1. Scan & Pay via UPI</h2>
+    <div class="qr-code-box">
+      <img src="./image/Paytm QR.jpg" alt="Scan this UPI QR to Pay" />
+      <br/>
+      <a href="./image/Paytm QR.jpg" download="UPI-QRCode.png">
+        <button class="button">Download QR Code</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="upload">
+    <h2>2. Upload Payment Screenshot</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="email">Email or Phone (optional)</label>
+      <input type="email" id="email" name="email" />
+      
+      <label for="screenshot">Upload Screenshot (Image or PDF)</label>
+      <input type="file" id="screenshot" name="screenshot" accept="image/*,application/pdf" required />
+      
+      <button class="button" type="submit">Submit Screenshot</button>
+    </form>
+  </section>
+
+
+  <footer>
+    &copy; 2025 Sneh Millap Charity Group | All rights reserved.
+  </footer>
+
+</body>
+</html>
+    
